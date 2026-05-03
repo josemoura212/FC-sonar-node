@@ -1,13 +1,13 @@
-name: run-ci
+name: ci
 on:
   push:
-    branches: [develop]
+    branches: [main, develop]
   pull_request:
-    branches: [develop]
+    types: [opened, synchronize, reopened]
+    branches: [main, develop]
 
 jobs:
-  build:
-    name: build-and-analyze
+  run-ci:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
