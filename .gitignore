@@ -1,0 +1,7 @@
+node_modules/
+coverage/
+.scannerwork/
+.sonar_lock
+report-task.txt
+*.log
+.DS_Store
