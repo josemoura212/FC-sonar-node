@@ -17,4 +17,8 @@ function divide(a, b) {
   return a / b;
 }
 
-module.exports = { sum, subtract, multiply, divide };
+function power(base, exponent) {
+  return Math.pow(base, exponent);
+}
+
+module.exports = { sum, subtract, multiply, divide, power };
